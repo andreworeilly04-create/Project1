@@ -53,7 +53,7 @@ h1 {
     margin: 16px 0 24px 0;
 }
 
-button {
+.start_button {
     background-color: #05c7cf;
     padding: 13px 21px 13px 19px;
     border: none;
@@ -94,11 +94,16 @@ h2 {
 }
 
 .about_img {
-    width: 40%;
+    width: 100%;
+    max-width:440px;
+}
+.discord_img{
+    width:100%;
+    max-width:440px;
 }
 
 .section_description2 {
-    width: 60%;
+    width: 100%;
     padding: 0 24px;
 }
 
@@ -107,6 +112,7 @@ h2 {
     line-height: 1.5;
     margin-bottom: 24px;
     padding: 0 24px;
+    width:100%;
 }
 
 #discord {
@@ -158,4 +164,35 @@ footer {
 
 footer p {
     margin-top: 12px;
+}
+#discord .section_description{
+    display:flex;
+    flex-direction:column-reverse;
+}
+@media (max-width: 728px){
+    .row{
+        flex-direction:column;
+        padding-left:20px;
+    }
+    h1{
+        font-size:35px;
+        text-align:center;
+    }
+    .home_description{
+        margin-bottom:24px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .subheader{
+        font-size:19px;
+        text-align:center;
+    }
+    .start_button{
+        max-width:185px;
+    }
+    .section_description{
+        display:flex;
+        flex-direction:column;
+    }
 }
